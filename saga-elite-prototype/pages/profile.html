@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Saga Elite</title>
+    <link href="../assets/css/styles.css" rel="stylesheet">
+    <link href="../assets/css/input.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="drops.html">Drops</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="orders.html">Orders</a></li>
+                <li><a href="profile.html" class="active">Profile</a></li>
+                <li><a href="auth.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile-section">
+            <h1>Your Profile</h1>
+            <form id="profile-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address"></textarea>
+                </div>
+                <button type="submit">Save Changes</button>
+            </form>
+        </section>
+
+        <section class="notifications-section">
+            <h2>WhatsApp Notifications</h2>
+            <label>
+                <input type="checkbox" id="whatsapp-notifications" name="whatsapp-notifications">
+                Enable WhatsApp Notifications
+            </label>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Saga Elite. All rights reserved.</p>
+    </footer>
+
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>

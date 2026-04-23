@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail - Saga Elite</title>
+    <link href="../assets/css/styles.css" rel="stylesheet">
+    <link href="../assets/css/input.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Navigation links go here -->
+        </nav>
+    </header>
+
+    <main class="product-detail">
+        <section class="image-gallery">
+            <img src="#" alt="Product Image" id="main-image">
+            <div class="thumbnail-gallery">
+                <img src="#" alt="Thumbnail 1" class="thumbnail" onclick="changeImage(this)">
+                <img src="#" alt="Thumbnail 2" class="thumbnail" onclick="changeImage(this)">
+                <img src="#" alt="Thumbnail 3" class="thumbnail" onclick="changeImage(this)">
+            </div>
+        </section>
+
+        <section class="product-info">
+            <h1 class="product-title">Product Name</h1>
+            <p class="product-price">$XX.XX</p>
+            <div class="variant-selector">
+                <label for="variant">Select Variant:</label>
+                <select id="variant">
+                    <option value="variant1">Variant 1</option>
+                    <option value="variant2">Variant 2</option>
+                </select>
+            </div>
+            <div class="action-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+
+    <script src="../assets/js/app.js"></script>
+    <script>
+        function changeImage(thumbnail) {
+            document.getElementById('main-image').src = thumbnail.src;
+        }
+    </script>
+</body>
+</html>

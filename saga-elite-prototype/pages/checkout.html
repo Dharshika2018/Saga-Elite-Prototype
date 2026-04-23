@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Saga Elite</title>
+    <link href="../assets/css/styles.css" rel="stylesheet">
+    <link href="../assets/css/input.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="text-center text-2xl font-bold">Checkout</h1>
+    </header>
+    <main class="container mx-auto p-4">
+        <section id="checkout-summary" class="mb-6">
+            <h2 class="text-xl font-semibold">Order Summary</h2>
+            <div id="items-list" class="border p-4 rounded">
+                <!-- Items will be dynamically populated here -->
+            </div>
+        </section>
+        <section id="shipping-address" class="mb-6">
+            <h2 class="text-xl font-semibold">Shipping Address</h2>
+            <form id="address-form" class="border p-4 rounded">
+                <label for="name" class="block mb-2">Name:</label>
+                <input type="text" id="name" class="border p-2 mb-4 w-full" required>
+                
+                <label for="address" class="block mb-2">Address:</label>
+                <input type="text" id="address" class="border p-2 mb-4 w-full" required>
+                
+                <label for="city" class="block mb-2">City:</label>
+                <input type="text" id="city" class="border p-2 mb-4 w-full" required>
+                
+                <label for="zip" class="block mb-2">Zip Code:</label>
+                <input type="text" id="zip" class="border p-2 mb-4 w-full" required>
+            </form>
+        </section>
+        <section id="payment-method" class="mb-6">
+            <h2 class="text-xl font-semibold">Payment Method</h2>
+            <form id="payment-form" class="border p-4 rounded">
+                <label for="card-number" class="block mb-2">Card Number:</label>
+                <input type="text" id="card-number" class="border p-2 mb-4 w-full" required>
+                
+                <label for="expiry" class="block mb-2">Expiry Date:</label>
+                <input type="text" id="expiry" class="border p-2 mb-4 w-full" required>
+                
+                <label for="cvv" class="block mb-2">CVV:</label>
+                <input type="text" id="cvv" class="border p-2 mb-4 w-full" required>
+            </form>
+        </section>
+        <button id="confirm-order" class="bg-blue-500 text-white p-2 rounded">Confirm Order</button>
+    </main>
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/checkout-simulation.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saga Elite - Home</title>
+    <link href="../assets/css/input.css" rel="stylesheet">
+    <link href="../assets/css/styles.css" rel="stylesheet">
+    <script src="../assets/js/app.js" defer></script>
+</head>
+<body>
+    <header class="sticky top-0 bg-white shadow">
+        <nav class="container mx-auto flex justify-between items-center p-4">
+            <div class="logo">
+                <h1 class="text-xl font-bold">Saga Elite</h1>
+            </div>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="text-gray-700">Home</a></li>
+                <li><a href="drops.html" class="text-gray-700">Drops</a></li>
+                <li><a href="auth.html" class="text-gray-700">Login</a></li>
+                <li><a href="cart.html" class="text-gray-700">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero bg-cover bg-center h-96" style="background-image: url('path/to/hero-image.jpg');">
+            <div class="container mx-auto text-white text-center">
+                <h2 class="text-4xl font-bold">Welcome to Saga Elite</h2>
+                <p class="mt-4">Discover the latest limited-edition fashion drops.</p>
+            </div>
+        </section>
+
+        <section class="countdown mt-8">
+            <div class="container mx-auto text-center">
+                <h3 class="text-2xl font-semibold">Next Drop in:</h3>
+                <div id="countdown-timer" class="text-3xl font-bold">00:00:00</div>
+            </div>
+        </section>
+
+        <section class="featured-drops mt-8">
+            <div class="container mx-auto">
+                <h3 class="text-2xl font-semibold">Featured Drops</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <!-- Featured drops will be populated here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="category-highlights mt-8">
+            <div class="container mx-auto">
+                <h3 class="text-2xl font-semibold">Category Highlights</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <!-- Category highlights will be populated here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="active-products mt-8">
+            <div class="container mx-auto">
+                <h3 class="text-2xl font-semibold">Active Products</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <!-- Active products will be populated here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-8">
+        <div class="container mx-auto text-center p-4">
+            <p>&copy; 2023 Saga Elite. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drops - Saga Elite</title>
+    <link href="../assets/css/styles.css" rel="stylesheet">
+    <link href="../assets/css/input.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="text-2xl font-bold">Published Drops</h1>
+        <div class="filter-sort">
+            <label for="filter">Filter:</label>
+            <select id="filter">
+                <option value="all">All</option>
+                <option value="upcoming">Upcoming</option>
+                <option value="past">Past</option>
+            </select>
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+                <option value="date">Date</option>
+                <option value="popularity">Popularity</option>
+            </select>
+        </div>
+    </header>
+    
+    <main>
+        <section class="drops-grid">
+            <!-- Mock data will be populated here -->
+            <div class="drop-item">
+                <h2>Drop Title 1</h2>
+                <p>Release Date: YYYY-MM-DD</p>
+                <a href="drop-detail.html">View Details</a>
+            </div>
+            <div class="drop-item">
+                <h2>Drop Title 2</h2>
+                <p>Release Date: YYYY-MM-DD</p>
+                <a href="drop-detail.html">View Details</a>
+            </div>
+            <!-- More drop items will be added dynamically -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Saga Elite. All rights reserved.</p>
+    </footer>
+
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>

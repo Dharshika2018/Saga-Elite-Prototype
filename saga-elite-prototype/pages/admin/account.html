@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Account Management - Saga Elite</title>
+    <link href="../../assets/css/styles.css" rel="stylesheet">
+    <link href="../../assets/css/input.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Admin Account Management</h1>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="drops.html">Drops</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="orders.html">Orders</a></li>
+                <li><a href="home-images.html">Home Images</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="whatsapp-logs.html">WhatsApp Logs</a></li>
+                <li><a href="gifts.html">Gifts</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Change Password</h2>
+            <form id="change-password-form">
+                <label for="current-password">Current Password:</label>
+                <input type="password" id="current-password" name="current-password" required>
+
+                <label for="new-password">New Password:</label>
+                <input type="password" id="new-password" name="new-password" required>
+
+                <label for="confirm-password">Confirm New Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+
+                <button type="submit">Change Password</button>
+            </form>
+        </section>
+        <section>
+            <h2>Account Information</h2>
+            <div id="account-info">
+                <p><strong>Email:</strong> admin@example.com</p>
+                <p><strong>Role:</strong> Administrator</p>
+                <button id="edit-account-info">Edit</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Saga Elite. All rights reserved.</p>
+    </footer>
+    <script src="../../assets/js/app.js"></script>
+</body>
+</html>

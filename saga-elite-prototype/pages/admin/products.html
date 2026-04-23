@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Products - Saga Elite</title>
+    <link href="../../assets/css/styles.css" rel="stylesheet">
+    <link href="../../assets/css/input.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="text-2xl font-bold">Manage Products</h1>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="drops.html">Drops</a></li>
+                <li><a href="products.html" class="text-blue-500">Products</a></li>
+                <li><a href="orders.html">Orders</a></li>
+                <li><a href="home-images.html">Home Images</a></li>
+                <li><a href="notifications.html">Notifications</a></li>
+                <li><a href="whatsapp-logs.html">WhatsApp Logs</a></li>
+                <li><a href="gifts.html">Gifts</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="p-4">
+        <section>
+            <h2 class="text-xl font-semibold">Product List</h2>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded" onclick="addProduct()">Add New Product</button>
+            <table class="min-w-full mt-4">
+                <thead>
+                    <tr>
+                        <th class="border px-4 py-2">Product Name</th>
+                        <th class="border px-4 py-2">Price</th>
+                        <th class="border px-4 py-2">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="product-list">
+                    <!-- Product rows will be populated here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="../../assets/js/app.js"></script>
+    <script>
+        function addProduct() {
+            // Logic to add a new product
+            alert('Add product functionality to be implemented.');
+        }
+
+        // Function to load products from mock data
+        function loadProducts() {
+            // Fetch and display products from mock data
+        }
+
+        document.addEventListener('DOMContentLoaded', loadProducts);
+    </script>
+</body>
+</html>

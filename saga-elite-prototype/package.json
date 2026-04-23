@@ -1,0 +1,26 @@
+{
+  "name": "saga-elite-prototype",
+  "version": "1.0.0",
+  "description": "Saga Elite limited-edition fashion platform prototype",
+  "main": "assets/js/app.js",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "tailwindcss -o assets/css/styles.css --minify"
+  },
+  "keywords": [
+    "fashion",
+    "prototype",
+    "ecommerce",
+    "tailwindcss"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "tailwindcss": "^3.0.0",
+    "postcss": "^8.0.0",
+    "autoprefixer": "^10.0.0"
+  },
+  "devDependencies": {
+    "serve": "^13.0.0"
+  }
+}
