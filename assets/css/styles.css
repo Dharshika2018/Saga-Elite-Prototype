@@ -1,0 +1,109 @@
+:root {
+  --saga-primary: #f2ca50;
+  --saga-primary-container: #d4af37;
+  --saga-surface: #131313;
+  --saga-surface-lowest: #0e0e0e;
+  --saga-surface-container: #1f1f1f;
+  --saga-surface-variant: #353535;
+  --saga-on-surface: #e2e2e2;
+}
+
+body {
+  background: radial-gradient(1200px 600px at 10% -10%, #2a2a2a, #131313 45%, #0e0e0e 100%);
+  color: var(--saga-on-surface);
+  font-family: "Manrope", sans-serif;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: "Cinzel", serif;
+  letter-spacing: 0.02em;
+}
+
+.surface-card {
+  background: linear-gradient(160deg, rgba(31, 31, 31, 0.95), rgba(19, 19, 19, 0.95));
+  border: 1px solid rgba(242, 202, 80, 0.2);
+  border-radius: 1rem;
+}
+
+.gold-ring {
+  box-shadow: 0 0 0 1px rgba(242, 202, 80, 0.3), 0 10px 35px rgba(0, 0, 0, 0.35);
+}
+
+.status-chip {
+  border-radius: 999px;
+  padding: 0.2rem 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.status-live { background: rgba(34, 197, 94, 0.15); color: #86efac; }
+.status-upcoming { background: rgba(59, 130, 246, 0.15); color: #93c5fd; }
+.status-ended { background: rgba(107, 114, 128, 0.2); color: #d1d5db; }
+.status-confirmed { background: rgba(34, 197, 94, 0.15); color: #86efac; }
+.status-pending { background: rgba(234, 179, 8, 0.2); color: #fef08a; }
+.status-failed { background: rgba(239, 68, 68, 0.2); color: #fca5a5; }
+
+.page-enter {
+  opacity: 0;
+  transform: translateY(8px);
+  animation: page-enter 350ms ease-out forwards;
+}
+
+@keyframes page-enter {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav-link {
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--saga-primary);
+  border-bottom-color: var(--saga-primary);
+}
+
+.hero-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1.2fr 1fr;
+  }
+}
+
+.toast-stack {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  display: grid;
+  gap: 0.5rem;
+  z-index: 60;
+}
+
+.toast {
+  background: #1f1f1f;
+  border: 1px solid rgba(242, 202, 80, 0.35);
+  color: #f5f5f5;
+  border-radius: 0.75rem;
+  padding: 0.75rem 0.9rem;
+  min-width: 220px;
+}
+
+.admin-sidebar a.active {
+  background: rgba(242, 202, 80, 0.16);
+  color: var(--saga-primary);
+}
+
+.image-fallback {
+  background: linear-gradient(135deg, #2b2b2b, #1a1a1a);
+  border: 1px dashed rgba(242, 202, 80, 0.35);
+}
